@@ -1,16 +1,18 @@
 import heapq
 import sys
 
-def merge_sorted_lists(input_filename):
-    """
+"""
     Сортирует N отсортированных списков из файла и сохраняет результат в <input_filename>_out.txt
     
     Args:
         input_filename (str): Путь к входному файлу
         
     Returns:
-        tuple: (output_filename, result_list) - имя выходного файла и отсортированный список
+        result_list: отсортированный список
     """
+
+def merge_sorted_lists(input_filename):
+    
     with open(input_filename, 'r') as f:
         # Читаем количество списков
         N = int(f.readline().strip())
@@ -57,7 +59,6 @@ def merge_sorted_lists(input_filename):
 def test_case(test_name, actual, expected):
         
         print(f"Test : {test_name}")
-        # Проверяем результат
         if actual == expected:
             print(f"  ✅ УСПЕХ: получен ожидаемый результат")
             print(f"     Результат:{actual}")
