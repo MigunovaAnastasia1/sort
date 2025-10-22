@@ -13,9 +13,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
-    - name: Build
-      run: sudo apt install python
     
     - name: Test
       run: python main.py
