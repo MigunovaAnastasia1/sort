@@ -103,3 +103,4 @@ if __name__ == "__main__":
         print(f"  ❌ Тестирование не пройдено:")
         print(f"  {passed} - passed")
         print(f"  {failed} - failed")
+        sys.exit(-1) 
